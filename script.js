@@ -19,7 +19,7 @@ const restaurants = [
     category: "Biryani",
     price: 199,
     rating: "4.7",
-    image: "https://images.unsplash.com/photo-1563379091339-03246963d51a"
+    image: "https://source.unsplash.com/400x300/?biryani"
   },
   {
     name: "Chinese Corner",
