@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodGo - Food Delivery Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-bowl-food"></i>
+        FoodGo
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="login-btn">Login</button>
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Delicious food delivered to your doorstep</h1>
+      <p>Order from your favourite restaurants near you.</p>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search restaurants or food..." />
+        <button onclick="searchRestaurants()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Popular Categories</h2>
+    <div class="category-container">
+      <button onclick="filterCategory('All')">All</button>
+      <button onclick="filterCategory('Pizza')">Pizza</button>
+      <button onclick="filterCategory('Burger')">Burger</button>
+      <button onclick="filterCategory('Biryani')">Biryani</button>
+      <button onclick="filterCategory('Chinese')">Chinese</button>
+      <button onclick="filterCategory('Dessert')">Dessert</button>
+    </div>
+  </section>
+
+  <section class="restaurants" id="restaurants">
+    <div class="section-title">
+      <h2>Top Restaurants</h2>
+      <p>Fresh food, fast delivery and amazing taste</p>
+    </div>
+
+    <div class="restaurant-grid" id="restaurantGrid"></div>
+  </section>
+
+  <section class="offers" id="offers">
+    <h2>Special Offers</h2>
+    <div class="offer-container">
+      <div class="offer-card">
+        <h3>50% OFF</h3>
+        <p>On your first food order</p>
+      </div>
+      <div class="offer-card">
+        <h3>Free Delivery</h3>
+        <p>On orders above ₹299</p>
+      </div>
+      <div class="offer-card">
+        <h3>Combo Deal</h3>
+        <p>Burger + Fries + Coke only ₹199</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart-section" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+      <h3>Total: ₹<span id="totalAmount">0</span></h3>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h2>FoodGo</h2>
+      <p>Fast food delivery website built with HTML, CSS and JavaScript.</p>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2026 FoodGo. All Rights Reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+          </html>
